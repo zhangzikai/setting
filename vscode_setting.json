@@ -11,6 +11,7 @@
     "[css]": {
         
     },
+    "javascript.updateImportsOnFileMove.enabled": "always",
 }
 
 
@@ -312,5 +313,22 @@
     {
         "key": "f6",
         "command": "editor.debug.action.runToCursor"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "editor.action.removeCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "editor.action.jumpToBracket"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "editor.emmet.action.matchTag"
+    },
+    {
+        "key": "alt+oem_period",
+        "command": "editor.emmet.action.splitJoinTag"
     }
 ]
